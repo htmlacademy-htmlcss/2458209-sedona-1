@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Дудка](https://up.htmlacademy.ru/htmlcss-individual/1/user/2458209).
-* Наставник: `Симоненко Татьяна`.
+* Наставник: `Симоненко Татьяна`(https://htmlacademy.ru/profile/tatien).
 
 ---
 
