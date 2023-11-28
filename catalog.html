@@ -35,6 +35,54 @@
       </nav>
     </header>
     <main class="main-inner">
+      <section class="inner-hottels">
+        <h1 class="inner-title">Гостиницы Седоны</h1>
+        <p class="inner-text">Гостиницы
+        </p>
+        <form class="inner-infrastructure" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-infrastructure">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-infrastructure-list">
+              <li class="catalog-infrastructure-item">
+                <input class="infrastructure-control" type="checkbox" name="infrastructure-group" checked>Бассейн
+              </li>
+              <li class="catalog-infrastructure-item">
+                <input class="infrastructure-control" type="checkbox" name="infrastructure-group" checked>Парковка
+              </li>
+              <li class="catalog-infrastructure-item">
+                <input class="infrastructure-control" type="checkbox" name=infrastructure-group">Wi-Fi
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <form class="inner-type" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-type">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-type-list">
+              <li class="catalog-type-item">
+                <input class="type-control" type="radio" name="type-housing" checked>Гостиница
+              </li>
+              <li class="catalog-type-item">
+                <input class="type-control" type="radio" name="type-housing">Мотель
+              </li>
+              <li class="catalog-type-item">
+                <input class="type-control" type="radio" name="type-housing">Апартаменты
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <form class="inner-cost" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-cost">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <ul>
+              <li>
+                <input type="range">
+              </li>
+            </ul>
+
+          </fieldset>
+        </form>
+      </section>
       <section class="subscription-catalog">
         <h2 class="subscription-subtitle">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
