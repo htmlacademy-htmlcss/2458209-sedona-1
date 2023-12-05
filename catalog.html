@@ -39,175 +39,155 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="inner-hottels">
-        <h1 class="hottels-title">Гостиницы Седоны</h1>
-        <p class="hottels-text">Гостиницы</p>
-        <form class="hottels-infrastructure" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="catalog-filter-infrastructure">
-            <legend class="catalog-filter-infrastructure-title">Инфраструктура:</legend>
-            <ul class="catalog-infrastructure-list">
-              <li class="catalog-infrastructure-item">
-                <input class="infrastructure-control" type="checkbox" name="infrastructure-group" checked>Бассейн
+      <section class="inner-section-hotels">
+        <h1 class="section-hotels-title">Гостиницы Седоны</h1>
+        <ul>
+          <li>
+          <a class="section-hotels-link" href="index.html"><img class="hotels-img" src="#" alt="Ведет на главную страницу"></a>
+          </li>
+          <li>
+          <a class="section-hotels-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <form class="hotels-infrastructure" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-items">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="checkbox" name="infrastructure-group" checked>Бассейн
               </li>
-              <li class="catalog-infrastructure-item">
-                <input class="infrastructure-control" type="checkbox" name="infrastructure-group" checked>Парковка
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="checkbox" name="infrastructure-group" checked>Парковка
               </li>
-              <li class="catalog-infrastructure-item">
-                <input class="infrastructure-control" type="checkbox" name="infrastructure-group">Wi-Fi
+              <li class="catalog-filter-item">
+                <input class="icatalog-filter-control" type="checkbox" name="infrastructure-group">Wi-Fi
               </li>
             </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-items">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="radio" name="type-housing" checked>Гостиница
+              </li>
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="radio" name="type-housing">Мотель
+              </li>
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="radio" name="type-housing">Апартаменты
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-items">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="catalog-filter-control" type="text" name="cost" value="0" placeholder="от">
+                <input class="catalog-filter-control" type="text" name="cost" value="9000" placeholder="от">
+              </li>
+              <li class="catalog-filter-item">
+                  <input class="catalog-filter-control" type="range" min="0" max="9000">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset-button">
+            <input class="button apply-button" type="submit" value="Применить">
+            <input class="button throw-button" type="reset" value="Сбросить">
           </fieldset>
         </form>
-        <form class="hottels-type" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="catalog-filter-type">
-            <legend class="catalog-filter-type-title">Тип жилья:</legend>
-            <ul class="catalog-type-list">
-              <li class="catalog-type-item">
-                <input class="type-control" type="radio" name="type-housing" checked>Гостиница
-              </li>
-              <li class="catalog-type-item">
-                <input class="type-control" type="radio" name="type-housing">Мотель
-              </li>
-              <li class="catalog-type-item">
-                <input class="type-control" type="radio" name="type-housing">Апартаменты
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-        <form class="hottels-cost" action="https://echo.htmlacademy.ru/" method="post"> <!--Здесь стоит обратить внимание. Не уверен. Искал информацию, как разметить, в гугле))-->
-          <fieldset class="catalog-filter-cost">
-            <legend class="catalog-filter-cost-title">Стоимость, ₽:</legend>
-            <ul class="cost-list">
-              <li class="cost-item">
-                <input class="slider-control" type="text" name="cost" value="0" placeholder="от">
-                <input class="slider-control" type="text" name="cost" value="9000" placeholder="от">
-              </li>
-              <li class="cost-item">
-                  <input class="slider" type="range" min="0" max="9000">
-              </li>
-              <li class="cost-item">
-                  <input class="button apply-button" type="submit" value="Применить">
-              </li>
-              <li class="cost-item">
-                  <input class="button throw-button" type="submit" value="Сбросить">
-              </li>
-            </ul>
-          </fieldset>
-        </form><!--Здесь стоит обратить внимание. Не уверен. Искал информацию, как разметить, в гугле))-->
       </section>
       <section class="catalog-search">
-        <h2 class="search-title">Найдено гостиниц: 38</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <select name="price">
+        <h2 class="search-title">Найдено гостиниц:<span class="search-hotels">38</span></h2>
+        <select name="price">
             <option value="Сначало дешевые">Сначало дешевые</option>
-          </select>
-        </form>
-        <ul class="icon-list">
-          <li class="icon-item">
-            <a class="icon-link menu-link" href="#">
-              <span class="visually-hidden">Показать меню</span>
+        </select>
+        <ul class="view-list">
+          <li class="view-item">
+            <a class="view-link menu-link" href="#">
+              <span class="visually-hidden">Показать в три колонки</span>
             </a>
           </li>
-          <li class="icon-item">
-            <a class="icon-link element-link" href="#">
-              <span class="visually-hidden">Показать элемент</span>
+          <li class="view-item">
+            <a class="view-link element-link" href="#">
+              <span class="visually-hidden">Показать крупно</span>
             </a>
           </li>
-          <li class="icon-item">
-            <a class="icon-link item-link" href="#">
-              <span class="visually-hidden">Показать список</span>
+          <li class="view-item">
+            <a class="view-link item-link" href="#">
+              <span class="visually-hidden">Показать списком</span>
             </a>
           </li>
         </ul>
-        <ul class="catalog-choice-list">
-          <li class="choice-item">
-            <a class="choice-link">
-              <img class="choice-image" src="#" alt="Вид на звездное небо из пещеры">
-              <h3 class="choice-title">Amara Resort & Spa</h3>
+        <ul class="catalog-hotels-list">
+          <li class="hotels-item">
+            <a class="hotels-link">
+              <img class="hotels-image" src="#" alt="Вид на звездное небо из пещеры">
+              <h3 class="hotels-title">Amara Resort & Spa</h3>
             </a>
-            <span class="choice-text">Гостиница</span>
-            <span class="choice-price">От 4000 ₽</span>
-            <a class="choice-button button" href="#">подробнее</a>
-            <a class="choice-favourites-button button" href="#">в избранное</a>
-            <form class="choice-form"><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
-              <input class="choice-form-stars" type="radio" name="stars" value="1">
-              <input class="choice-form-stars" type="radio" name="stars" value="2">
-              <input class="choice-form-stars" type="radio" name="stars" value="3">
-              <input class="choice-form-stars" type="radio" name="stars" value="4" checked>
-              <input class="choice-form-rating" type="text" name="rating" value="Рейтинг: 8,5">
-            </form><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-price">От 4000 ₽</span>
+            <a class="hotels-button button" href="#">подробнее</a>
+            <a class="hotels-favourites-button button" href="#">в избранное</a>
+            <img class="hotels-img" src="#" alt="4 звезды">
+            <p class="hotels-text">Рейтинг: 8,5</p>
           </li>
-          <li class="choice-item">
-            <a class="choice-link">
-              <img class="choice-image" src="#" alt="Вид на скалы с радугой">
-              <h3 class="choice-title">Villas at Poco Diablo</h3>
+          <li class="hotels-item">
+            <a class="hotels-link">
+              <img class="hotels-image" src="#" alt="Вид на скалы с радугой">
+              <h3 class="hotels-title">Villas at Poco Diablo</h3>
             </a>
-            <span class="choice-text">Гостиница</span>
-            <span class="choice-price">От 5000 ₽</span>
-            <a class="choice-button button" href="#">подробнее</a>
-            <a class="choice-favourites-button button" href="#">в избранное</a>
-            <form class="choice-form"><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
-              <input class="choice-form-stars" type="radio" name="stars" value="1">
-              <input class="choice-form-stars" type="radio" name="stars" value="2">
-              <input class="choice-form-stars" type="radio" name="stars" value="3">
-              <input class="choice-form-stars" type="radio" name="stars" value="4" checked>
-              <input class="choice-form-rating" type="text" name="rating" value="Рейтинг: 9,2">
-            </form><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-price">От 5000 ₽</span>
+            <a class="hotels-button button" href="#">подробнее</a>
+            <a class="hotels-favourites-best-button button" href="#">в избранное</a>
+            <img class="hotels-img" src="#" alt="4 звезды">
+            <p class="hotels-text">Рейтинг: 9,2</p>
           </li>
-          <li class="choice-item">
-            <a class="choice-link">
-              <img class="choice-image" src="#" alt="Вид на горы при рассвете">
-              <h3 class="choice-title">Desert Quail Inn</h3>
+          <li class="hotels-item">
+            <a class="hotels-link">
+              <img class="hotels-image" src="#" alt="Вид на горы при рассвете">
+              <h3 class="hotels-title">Desert Quail Inn</h3>
             </a>
-            <span class="choice-text">Гостиница</span>
-            <span class="choice-price">От 2500 ₽</span>
-            <a class="choice-button button" href="#">подробнее</a>
-            <a class="choice-favourites-button button" href="#">в избранное</a>
-            <form class="choice-form"><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
-              <input class="choice-form-stars" type="radio" name="stars" value="1">
-              <input class="choice-form-stars" type="radio" name="stars" value="2">
-              <input class="choice-form-stars" type="radio" name="stars" value="3" checked>
-              <input class="choice-form-rating" type="text" name="rating" value="Рейтинг: 6,9">
-            </form><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-price">От 2500 ₽</span>
+            <a class="hotels-button button" href="#">подробнее</a>
+            <a class="hotels-favourites-button button" href="#">в избранное</a>
+            <img class="hotels-img" src="#" alt="3 звезды">
+            <p class="hotels-text">Рейтинг: 6,9</p>
           </li>
-          <li class="choice-item">
-            <a class="choice-link">
-              <img class="choice-image" src="#" alt="Вид на горы при закате">
-              <h3 class="choice-title">GreenTree Inn</h3>
+          <li class="hotels-item">
+            <a class="hotels-link">
+              <img class="hotels-image" src="#" alt="Вид на горы при закате">
+              <h3 class="hotels-title">GreenTree Inn</h3>
             </a>
-            <span class="choice-text">Гостиница</span>
-            <span class="choice-price">От 1500 ₽</span>
-            <a class="choice-button button" href="#">подробнее</a>
-            <a class="choice-favourites-button button" href="#">в избранное</a>
-            <form class="choice-form"><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
-              <input class="choice-form-stars" type="radio" name="stars" value="1">
-              <input class="choice-form-stars" type="radio" name="stars" value="2" checked>
-              <input class="choice-form-rating" type="text" name="rating" value="Рейтинг:5,0">
-            </form><!--Здесь стоит обратить внимание. Уверен, что не правильно, но не смог понять, как лучше сделать-->
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-price">От 1500 ₽</span>
+            <a class="hotels-button button" href="#">подробнее</a>
+            <a class="hotels-favourites-button button" href="#">в избранное</a>
+            <img class="hotels-img" src="#" alt="2 звезды">
+            <p class="hotels-text">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ul class="pages-list">
-          <li class="pages-item">
-            <a class="pages-link pages-prev" href="#"><span class="visually-hidden">Предыдущая страница</span></a>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev" href="#"><span class="visually-hidden">Предыдущая страница</span></a>
           </li>
-          <li class="pages-item">
-            <a class="pages-link" href="#">1</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
           </li>
-          <li class="pages-item">
-            <a class="pages-link" href="#">2</a>
-          <li class="pages-item">
-            <a class="pages-link" href="#">3</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pages-item">
-            <a class="pages-link" href="#">4</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pages-item">
-            <a class="pages-link" href="#">
-              <span class="visually-hidden">...</span><!--Здесь стоит обратить внимание. Не уверен-->
-            </a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
           </li>
-          <li class="pages-item">
-            <a class="pages-link" href="#">10</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -223,17 +203,17 @@
     <footer class="footer-page">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="footer-link" href="https://vk.com/htmlacademy"><img class="social_vk" src="#" alt="Логотип Вконтаке."><span class="visually-hidden">ВК</span></a>
+          <a class="footer-link" href="https://vk.com/htmlacademy" target="_blank"><img class="social-img" src="#" alt="Логотип Вконтаке."><span class="visually-hidden">ВК</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-link" href="https://t.me/htmlacademy"><img class="social_telegram" src="#" alt="Логотип Телеграм."><span class="visually-hidden">Телеграм</span></a>
+          <a class="footer-link" href="https://t.me/htmlacademy" target="_blank"><img class="social-img" src="#" alt="Логотип Телеграм."><span class="visually-hidden">Телеграм</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-link" href=" https://www.youtube.com/user/htmlacademyru"><img class="social-youtube" src="#" alt="Логотип Ютуб."><span class="visually-hidden">Ютуб</span></a>
+          <a class="footer-link" href=" https://www.youtube.com/user/htmlacademyru" target="_blank"><img class="social-img" src="#" alt="Логотип Ютуб."><span class="visually-hidden">Ютуб</span></a>
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-      <a class="footer-logo" href="https://htmlacademy.ru/"><img class="logo-picture" src="#" alt="Подпись html academy."></a>
+      <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank"><img class="logo-picture" src="#" alt="Разработчик Дудка Александр Александрович из html academy."></a>
     </footer>
   </body>
 </html>
