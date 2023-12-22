@@ -5,12 +5,12 @@
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="page-inner page-container">
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="page-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-      </a>
       <nav class="navigation">
+        <a class="logo" href="index.html">
+          <img class="page-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -42,12 +42,12 @@
     <main class="main-inner">
       <section class="inner-section-hotels">
         <h1 class="section-hotels-title">Гостиницы Седоны</h1>
-        <ul>
-          <li>
-          <a class="section-hotels-link" href="index.html"><img class="hotels-img" src="images/link-house.svg" width="13" height="15" alt="Ведет на главную страницу"></a>
+        <ul class="section-hotels-list">
+          <li class="section-hotels-item">
+            <a class="section-hotels-link" href="index.html"><img class="hotels-img" src="images/link-house.svg" width="13" height="15" alt="Ведет на главную страницу"></a>
           </li>
-          <li>
-          <a class="section-hotels-link" href="#">Гостиницы</a>
+          <li class="section-hotels-item">
+            <a class="section-hotels-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <form class="hotels-infrastructure" action="https://echo.htmlacademy.ru/" method="post">
@@ -98,27 +98,29 @@
         </form>
       </section>
       <section class="catalog-search">
-        <h2 class="search-title">Найдено гостиниц:<span class="search-hotels">38</span></h2>
-        <select name="price">
-            <option value="Сначало дешевые">Сначало дешевые</option>
-        </select>
-        <ul class="view-list">
-          <li class="view-item">
-            <a class="view-link menu-link" href="#">
-              <span class="visually-hidden">Показать в три колонки</span>
-            </a>
-          </li>
-          <li class="view-item">
-            <a class="view-link element-link" href="#">
-              <span class="visually-hidden">Показать крупно</span>
-            </a>
-          </li>
-          <li class="view-item">
-            <a class="view-link item-link" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-          </li>
-        </ul>
+        <div class="catalog-container">
+          <h2 class="search-title">Найдено гостиниц:<span class="search-hotels">38</span></h2>
+          <select name="price">
+              <option value="Сначало дешевые">Сначало дешевые</option>
+          </select>
+          <ul class="view-list">
+            <li class="view-item">
+              <a class="view-link menu-link" href="#">
+                <span class="visually-hidden">Показать в три колонки</span>
+              </a>
+            </li>
+            <li class="view-item">
+              <a class="view-link element-link" href="#">
+                <span class="visually-hidden">Показать крупно</span>
+              </a>
+            </li>
+            <li class="view-item">
+              <a class="view-link item-link" href="#">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog-hotels-list">
           <li class="hotels-item">
             <a class="hotels-link">
