@@ -8,7 +8,7 @@
   <body class="page-inner page-container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo" href="index.html">
+        <a class="navigation-logo" href="index.html">
           <img class="page-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
@@ -19,18 +19,20 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-active" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
+              <svg class="navigation-icon" aria-hidden="true" focusabe="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Лайк</span>
+              <svg class="navigation-icon" aria-hidden="true" focusabe="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+              <span class="visually-hidden">Лайк</span><span class="favourite-like">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -44,7 +46,11 @@
         <h1 class="section-hotels-title">Гостиницы Седоны</h1>
         <ul class="section-hotels-list">
           <li class="section-hotels-item">
-            <a class="section-hotels-link" href="index.html"><img class="hotels-img" src="images/link-house.svg" width="13" height="15" alt="Ведет на главную страницу"></a>
+            <a class="section-hotels-link" href="index.html"><img class="hotels-img" src="images/link-house.svg" width="13" height="15" alt="Ведет на главную страницу."></a>
+          </li>
+          <li class="section-hotels-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="21" fill="none"><path fill="#fff" d="M7 10 2.1 5.7c-.3-.2-.8-.2-1.2 0s-.2.8 0 1l4.2 3.8-4 3.7c-.3.3-.3.8 0 1 0 .1.3.3.5.3l.5-.3L6.9 11a.6.6 0 0 0 0-1Z"/></svg>
+          </a>
           </li>
           <li class="section-hotels-item">
             <a class="section-hotels-link" href="#">Гостиницы</a>
@@ -100,23 +106,26 @@
       <section class="catalog-search">
         <div class="catalog-container">
           <h2 class="search-title">Найдено гостиниц:<span class="search-hotels">38</span></h2>
-          <select name="price">
-              <option value="Сначало дешевые">Сначало дешевые</option>
+          <select class="catalog-price" name="price">
+              <option class="catalog-price-text" value="Сначало дешевые">Сначало дешевые</option>
           </select>
           <ul class="view-list">
             <li class="view-item">
               <a class="view-link menu-link" href="#">
                 <span class="visually-hidden">Показать в три колонки</span>
+                <svg aria-hidden="true" focusabe="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               </a>
             </li>
             <li class="view-item">
               <a class="view-link element-link" href="#">
                 <span class="visually-hidden">Показать крупно</span>
+                <svg aria-hidden="true" focusabe="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               </a>
             </li>
             <li class="view-item">
               <a class="view-link item-link" href="#">
                 <span class="visually-hidden">Показать списком</span>
+                <svg aria-hidden="true" focusabe="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               </a>
             </li>
           </ul>
