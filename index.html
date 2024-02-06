@@ -160,13 +160,19 @@
           <h2 class="modal-container-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-container-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="date" class="modal-control">
-              <p class="modal-container-text">Дата заезда:</p>
-              <input class="subscription-email modal-container-control" type="date" name="date" id="date">
+              <span class="modal-container-text">Дата заезда:</span>
+              <input class="subscription-email modal-container-control" type="text" name="date" id="date" placeholder="27 апреля 2020">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
             </label>
             <span class="text-modal text-modal-another">Мы не можем отправить вас в прошлое.</span>
             <label class="modal-control">
-              <p class="modal-container-text">Дата выезда:</p>
-              <input class="subscription-email modal-container-control" type="date" name="date">
+              <span class="modal-container-text">Дата выезда:</span>
+              <input class="subscription-email modal-container-control" type="text" name="date" placeholder="21 сентября 2021">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
             </label>
             <span class="text-modal">На эти даты есть свободные номера. Пока есть.</span>
             <div class="modal-container-family">
@@ -182,7 +188,7 @@
               </div>
               <div class="modal-container-family-search">
                 <span class="modal-tooltip">
-                <label class="modal-container-text modal-control-tooltip" for="appointment-date" ">Дети:</label>
+                <label class="modal-container-text modal-control-tooltip" for="tooltip-label-date">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
