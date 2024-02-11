@@ -558,7 +558,7 @@ position: relative;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 .modal-container-close {
-  display: non;
+  display: none;
 }
 .modal-container-button-close {
   background-image: url("../images/close.svg");
