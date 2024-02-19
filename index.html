@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body class="page page-container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo">
-          <img class="page-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-        </a>
         <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-logo" href="index.html">
+              <img class="page-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+            </a>
+          </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-active" href="#">Главная</a>
           </li>
@@ -191,13 +194,14 @@
                 </div>
               </div>
               <div class="modal-container-children">
-                <label for="children" class="modal-children modal-control-tooltip">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                    <span class="visually-hidden">Дополнительная информация</span>
-                  </button>
-                  <span class="tooltip-text" role="tooltip">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
-                </span>
+                <label for="children" class="modal-children modal-control-tooltip">Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <span class="visually-hidden">Дополнительная информация</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                  </span>
+                </label>
                 <div class="button-control">
                   <button type="button" class="button-family-min">
                     <svg class="family-icon-min" xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none"><path fill="#000" d="M.4 0v2h14V0H.4Z"/></svg>
