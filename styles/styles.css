@@ -129,7 +129,6 @@ img {
 
 .page-logo {
   cursor: pointer;
-  margin-right: 28px;
 }
 
 .navigation-list {
@@ -143,8 +142,20 @@ img {
   justify-content: flex-end;
 }
 
-.navigation-item:nth-child(2) li {
+.navigation-list:first-child li {
   flex-grow: 1;
+}
+
+.navigation-list .navigation-item:not(:first-child):hover{
+  opacity: 0.8;
+}
+
+.navigation-list .navigation-item:not(:first-child):focus{
+  opacity: 0.6;
+}
+
+.navigation-list .navigation-item:not(:first-child):active{
+  opacity: 0.4;
 }
 
 .navigation-link {
@@ -560,6 +571,7 @@ img {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 142px;
   padding: 0;
@@ -1048,6 +1060,7 @@ img {
 
 .catalog-filter-label{
   padding-left: 16px;
+  line-height: 23px;
 }
 
 .range-input-text {
@@ -1194,7 +1207,8 @@ img {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1375,10 +1389,12 @@ background-color: #0000004d;
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   position: relative;
   cursor: pointer;
   font-size: 18px;
+  line-height: 21px;
   font-family: "PT Sans", sans-serif;
   height: 49px
 }
@@ -1421,6 +1437,7 @@ background-color: #0000004d;
   line-height: 28px;
   margin: 0;
   margin-top: 16px;
+  color: #333;
 }
 
 .hotels-link {
@@ -1435,6 +1452,7 @@ background-color: #0000004d;
   height: 18px;
   background-image: url("../images/star.svg");
   background-repeat: space;
+  cursor: pointer;
 }
 
 .hotel-stars-1 {
@@ -1455,6 +1473,18 @@ background-color: #0000004d;
 
 .hotel-stars-5 {
   width: 106px;
+}
+
+.hotel-stars:hover {
+  opacity: 0.8;
+}
+
+.hotel-stars:focus {
+  opacity: 0.6;
+}
+
+.hotel-stars:active {
+  opacity: 0.4;
 }
 
 .hotels-favourites-button {
@@ -1498,6 +1528,18 @@ background-color: #0000004d;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hotels-text-another:hover {
+  opacity: 0.8;
+}
+
+.hotels-text-another:focus {
+  opacity: 0.6;
+}
+
+.hotels-text-another:active {
+  opacity: 0.4;
 }
 
 .pagination-list {
@@ -1560,6 +1602,7 @@ background-color: #0000004d;
 .pagination-link:not(.pagination-prev, .point-link):hover {
   background-color: #68A2CA;
 }
+
 .pagination-link:not(.pagination-prev, .point-link):focus {
   background-color: #68A2CA;
 }
