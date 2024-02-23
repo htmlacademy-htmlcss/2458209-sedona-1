@@ -316,8 +316,7 @@ img {
 }
 
 .wrapper-container {
-margin-top: 3px;
-margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 .wrap-container {
@@ -848,8 +847,7 @@ margin-bottom: 3px;
 }
 
 .modal-control-tooltip {
-  width: 130px;
-  padding-top: 8px;
+  width: 104px;
 }
 
 .button-control {
@@ -937,8 +935,8 @@ margin-bottom: 3px;
 
 .tooltip {
   position: relative;
-  top: -7px;
-  left: 5px;
+  top: -5px;
+  left: -45px;
 }
 
 .tooltip-toggle {
@@ -1315,6 +1313,10 @@ margin-bottom: 3px;
 
 .apply-button {
   background-color: #82b3d3;
+  margin-bottom: 39px;
+}
+
+.button-search {
   margin-bottom: 38px;
   padding: 21px 50px;
 }
