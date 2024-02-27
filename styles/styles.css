@@ -599,15 +599,15 @@ img {
   color: #83b3d3;
 }
 
-.footer-social-item .footer-link:hover .social-img {
+.footer-link:hover .social-img {
   color: #68a2ca;
 }
 
-.footer-social-item .footer-link:focus .social-img  {
+.footer-link:focus .social-img  {
   color: #68a2ca;
 }
 
-.footer-social-item .footer-link:active .social-img {
+.footer-link:active .social-img {
   color: #68a2ca4d;
 }
 
