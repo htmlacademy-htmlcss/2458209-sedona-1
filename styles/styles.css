@@ -782,6 +782,42 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  opacity: 0.6;
+}
+
+.modal-container-control:placeholder-shown {
+  background-color: #f2f2f2;
+  outline: 2px solid #f2f2f2;
+}
+
+.modal-container-control:not(:placeholder-shown) {
+  background-color: #f2f2f2;
+  outline: 2px solid #000000;
+}
+
+.modal-container-control:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-container-control:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+@supports selector(:focus-visible) {
+
+.modal-container-control:focus {
+    outline: none;
+  }
+
+.modal-container-control:focus-visible {
+    outline: 3px solid #83b3d3;
+  }
+}
+
+.modal-container-control:active {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .button-date {
@@ -927,6 +963,10 @@ img {
   margin: 0;
   font-size: 20px;
   margin-bottom: 38px;
+}
+
+.button-search:focus {
+  outline: none;
 }
 
 .tooltip {
