@@ -22,7 +22,7 @@ html {
 .page-container {
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
   background-color: #F2F2F2;
 }
 
@@ -110,7 +110,6 @@ img {
   line-height: 24px;
   min-height: 64px;
   width: 1200px;
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
 .navigation {
@@ -230,7 +229,6 @@ img {
 
 .main-container {
   flex-grow: 1;
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
 .index-section {
@@ -982,10 +980,6 @@ img {
   left: 119px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.main-inner {
-  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
 .inner-section-hotels {
