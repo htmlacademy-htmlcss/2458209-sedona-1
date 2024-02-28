@@ -829,7 +829,6 @@ margin-top: 25px;
 }
 
 @supports selector(:focus-visible) {
-
 .modal-container-control:focus {
     outline: none;
   }
