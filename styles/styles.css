@@ -124,11 +124,12 @@ img {
   z-index: 1;
   display: flex;
   height: 64px;
+  min-width: 140px;
+  margin-right: 28px;
 }
 
 .page-logo {
   cursor: pointer;
-  margin-right: 28px;
 }
 
 .navigation-list {
@@ -236,7 +237,7 @@ img {
   background-color: #5b89a7;
   color: #333333;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   position: relative;
 }
 
@@ -310,6 +311,10 @@ img {
   text-align: center;
 }
 
+.advantages-wrapper:nth-child(3n+3) {
+  background-color: rgb(131 179 211 / 20%);
+}
+
 .wrapper-container {
   margin-bottom: 6px;
 }
@@ -323,6 +328,11 @@ img {
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
+}
+
+.advantages-img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-subtitle {
@@ -367,10 +377,6 @@ img {
   padding-right: 3px;
 }
 
-.another {
-  background-color: rgb(131 179 211 / 20%);
-}
-
 .tiny-section {
   text-align: center;
   padding: 64px 0;
@@ -409,10 +415,17 @@ img {
 }
 
 .offers-section-item {
-  background-color: rgb(131 179 211 / 12%);
   width: 400px;
   min-height: 385px;
   position: relative;
+}
+
+.offers-section-item:nth-child(3n+1) {
+  background-color: rgb(131 179 211 / 12%);
+}
+
+.offers-section-item:nth-child(3n+3) {
+  background-color: rgb(131 179 211 / 12%);
 }
 
 .offers-section-container {
@@ -590,7 +603,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  width: 142px;
+  max-width: 142px;
   padding: 0;
   margin: 0;
 }
@@ -619,17 +632,22 @@ img {
   align-items: center;
 }
 
-.contacts-phone {
+.contacts-phone-contaiter {
+  width: 720px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-left: 43px;
+}
+
+.contacts-phone {
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  width: 720px;
-  padding-left: 43px;
+  width: 331px;
 }
 
 .contacts-phone:hover {
@@ -644,11 +662,14 @@ img {
   color: #7561574d;
 }
 
-.footer-logo {
-  color: #000000;
+.footer-logo-contaiter {
   width: 115px;
   margin-left: auto;
   padding-top: 8px;
+}
+
+.footer-logo {
+  color: #000000;
 }
 
 .footer-logo:hover {
@@ -732,6 +753,7 @@ img {
 .container-form {
   display: flex;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 .modal-container-text {
@@ -753,7 +775,6 @@ img {
 
 .text-modal:nth-child(2) {
   margin-bottom: 25px;
-  padding-top: 5px;
 }
 
 .text-modal-error {
@@ -1523,7 +1544,6 @@ img {
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
   padding: 20px;
-  align-items: center;
   align-content: start;
 }
 
